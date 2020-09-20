@@ -1,3 +1,4 @@
+README.md
 setup.py
 libreria/__init__.py
 libreria/fmathsum.py
