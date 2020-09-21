@@ -1,5 +1,84 @@
 creacion paquete de instalacion ==> *.tar.gz
 --------------------------------------------
+
+opcion 1/2:
+==========
+C:\gh\modulo_setup.py>python setup.py sdist bdist_wheel
+
+running sdist
+running egg_info
+creating paquete_suma_resta.egg-info
+writing paquete_suma_resta.egg-info\PKG-INFO
+writing dependency_links to paquete_suma_resta.egg-info\dependency_links.txt
+writing top-level names to paquete_suma_resta.egg-info\top_level.txt
+writing manifest file 'paquete_suma_resta.egg-info\SOURCES.txt'
+reading manifest file 'paquete_suma_resta.egg-info\SOURCES.txt'
+writing manifest file 'paquete_suma_resta.egg-info\SOURCES.txt'
+running check
+creating paquete_suma_resta-1.0.0
+creating paquete_suma_resta-1.0.0\libreria
+creating paquete_suma_resta-1.0.0\libreria\libresta
+creating paquete_suma_resta-1.0.0\paquete_suma_resta.egg-info
+copying files to paquete_suma_resta-1.0.0...
+copying README.md -> paquete_suma_resta-1.0.0
+copying setup.py -> paquete_suma_resta-1.0.0
+copying libreria\__init__.py -> paquete_suma_resta-1.0.0\libreria
+copying libreria\fmathsum.py -> paquete_suma_resta-1.0.0\libreria
+copying libreria\libresta\__init__.py -> paquete_suma_resta-1.0.0\libreria\libresta
+copying libreria\libresta\fmathres.py -> paquete_suma_resta-1.0.0\libreria\libresta
+copying paquete_suma_resta.egg-info\PKG-INFO -> paquete_suma_resta-1.0.0\paquete_suma_resta.egg-info
+copying paquete_suma_resta.egg-info\SOURCES.txt -> paquete_suma_resta-1.0.0\paquete_suma_resta.egg-info
+copying paquete_suma_resta.egg-info\dependency_links.txt -> paquete_suma_resta-1.0.0\paquete_suma_resta.egg-info
+copying paquete_suma_resta.egg-info\top_level.txt -> paquete_suma_resta-1.0.0\paquete_suma_resta.egg-info
+Writing paquete_suma_resta-1.0.0\setup.cfg
+creating dist
+Creating tar archive
+removing 'paquete_suma_resta-1.0.0' (and everything under it)
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build\lib
+creating build\lib\libreria
+copying libreria\fmathsum.py -> build\lib\libreria
+copying libreria\__init__.py -> build\lib\libreria
+creating build\lib\libreria\libresta
+copying libreria\libresta\fmathres.py -> build\lib\libreria\libresta
+copying libreria\libresta\__init__.py -> build\lib\libreria\libresta
+installing to build\bdist.win32\wheel
+running install
+running install_lib
+creating build\bdist.win32
+creating build\bdist.win32\wheel
+creating build\bdist.win32\wheel\libreria
+copying build\lib\libreria\fmathsum.py -> build\bdist.win32\wheel\.\libreria
+creating build\bdist.win32\wheel\libreria\libresta
+copying build\lib\libreria\libresta\fmathres.py -> build\bdist.win32\wheel\.\libreria\libresta
+copying build\lib\libreria\libresta\__init__.py -> build\bdist.win32\wheel\.\libreria\libresta
+copying build\lib\libreria\__init__.py -> build\bdist.win32\wheel\.\libreria
+running install_egg_info
+Copying paquete_suma_resta.egg-info to build\bdist.win32\wheel\.\paquete_suma_resta-1.0.0-py3.8.egg-info
+running install_scripts
+creating build\bdist.win32\wheel\paquete_suma_resta-1.0.0.dist-info\WHEEL
+creating 'dist\paquete_suma_resta-1.0.0-py3-none-any.whl' and adding 'build\bdist.win32\wheel' to it
+adding 'libreria/__init__.py'
+adding 'libreria/fmathsum.py'
+adding 'libreria/libresta/__init__.py'
+adding 'libreria/libresta/fmathres.py'
+adding 'paquete_suma_resta-1.0.0.dist-info/METADATA'
+adding 'paquete_suma_resta-1.0.0.dist-info/WHEEL'
+adding 'paquete_suma_resta-1.0.0.dist-info/top_level.txt'
+adding 'paquete_suma_resta-1.0.0.dist-info/RECORD'
+removing build\bdist.win32\wheel
+
+C:\gh\modulo_setup.py>
+
+
+
+
+*****************************************************************************************************************************
+opcion 2/2:
+===========
 C:\gh\modulosej>python setup.py sdist
 
 running sdist
