@@ -4,7 +4,7 @@ import setuptools
 #with open("README.md", "r") as fh:
 #    long_description = fh.read()
 #packages=setuptools.find_packages(),
-setup(
+setuptools.setup(
       name="paquete_suma_resta",
       version="1.0.0",
       description="ejemplo de setup inicial",
