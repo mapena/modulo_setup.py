@@ -1,4 +1,4 @@
-1) generar archivo  en home del usuario llamado ".pypirc"
+1) generar archivo  en home del usuario llamado ".pypirc" en C:\Users\mp  (home del user)
 contenido del archivo:
 ----------------------
 
@@ -8,35 +8,75 @@ index-servers =
     nexus
  
 [pypi]
-repository:https://pypi.python.org/pypi
-username:your_username
-password:your_password
- 
+repository:https://pypi.org/simple
+username=admin
+password=admin 
 
 [nexus]
-repository=http://localhost:8081/repository/repopypi/
+repository=http://localhost:8081/repository/mirepo-hosted/
 username=admin
 password=admin
  
 
+=============================================================================
+2a) subir paquete:
+    instalar:
+    --------
 
-instalar:
---------
-
-python3 -m pip install --user --upgrade setuptools wheel
-python3 -m pip install --user --upgrade twine
-
+    python3 -m pip install --user --upgrade setuptools wheel
+    python3 -m pip install --user --upgrade twine
 
 C:\gh\modulo_setup.py>Twine upload -r nexus dist/*
 
 
-Uploading distributions to http://localhost:8081/repository/repopypi/
+Uploading distributions to http://localhost:8081/repository/mirepo-hosted/
 Uploading paquete_suma_resta-1.0.0-py3-none-any.whl
 100%| 4.79k/4.79k [00:01<00:00, 3.57kB/s]
 Uploading paquete_suma_resta-1.0.0.tar.gz
 100%| 4.20k/4.20k [00:00<00:00, 24.9kB/s]
 
-C:\gh\modulo_setup.py>
+===============================================================================
+2b) CREA y subi paquete:  (otra forma de subir el paquete)
+python setup.py sdist upload -r nexus
+
+C:\gh\modulo2_setup.py>python setup.py sdist upload -r nexus
+
+running sdist
+running egg_info
+writing paquete_suma_resta2.egg-info\PKG-INFO
+writing dependency_links to paquete_suma_resta2.egg-info\dependency_links.txt
+writing top-level names to paquete_suma_resta2.egg-info\top_level.txt
+reading manifest file 'paquete_suma_resta2.egg-info\SOURCES.txt'
+writing manifest file 'paquete_suma_resta2.egg-info\SOURCES.txt'
+running check
+creating paquete_suma_resta2-1.0.0
+creating paquete_suma_resta2-1.0.0\paquete_suma_resta2.egg-info
+copying files to paquete_suma_resta2-1.0.0...
+copying README.md -> paquete_suma_resta2-1.0.0
+copying setup.py -> paquete_suma_resta2-1.0.0
+copying paquete_suma_resta2.egg-info\PKG-INFO -> paquete_suma_resta2-1.0.0\paquete_suma_resta2.egg-info
+copying paquete_suma_resta2.egg-info\SOURCES.txt -> paquete_suma_resta2-1.0.0\paquete_suma_resta2.egg-info
+copying paquete_suma_resta2.egg-info\dependency_links.txt -> paquete_suma_resta2-1.0.0\paquete_suma_resta2.egg-info
+copying paquete_suma_resta2.egg-info\top_level.txt -> paquete_suma_resta2-1.0.0\paquete_suma_resta2.egg-info
+Writing paquete_suma_resta2-1.0.0\setup.cfg
+Creating tar archive
+removing 'paquete_suma_resta2-1.0.0' (and everything under it)
+running upload
+Submitting dist\paquete_suma_resta2-1.0.0.tar.gz to http://localhost:8081/repository/mirepo-hosted/
+Server response (200): OK
+
+===============================================================================
+2) con variables de environment  (falta probar)
+
+environment
+
+ENV \
+  TWINE_REPOSITORY_URL=https://nexus.your.domain/repository/pypi-hosted/ \
+  TWINE_USERNAME=nexususername \
+  TWINE_PASSWORD=nexuspassword
+Or command line
+
+twine upload --repository-url
 
 
 
