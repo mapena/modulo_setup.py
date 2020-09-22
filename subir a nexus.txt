@@ -1,3 +1,11 @@
+    instalar:
+    --------
+
+    python3 -m pip install --user --upgrade setuptools wheel
+    python3 -m pip install --user --upgrade twine
+
+    pip install --upgrade setuptools
+
 1) generar archivo  en home del usuario llamado ".pypirc" en C:\Users\mp  (home del user)
 contenido del archivo:
 ----------------------
@@ -20,11 +28,6 @@ password=admin
 
 =============================================================================
 2a) subir paquete:
-    instalar:
-    --------
-
-    python3 -m pip install --user --upgrade setuptools wheel
-    python3 -m pip install --user --upgrade twine
 
 C:\gh\modulo_setup.py>Twine upload -r nexus dist/*
 
