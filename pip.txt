@@ -1,0 +1,100 @@
+pip:
+https://pypi.org/simple/colorama/
+https://pypi.org/simple/colorama/
+https://pypi.org/simple
+==========================================================
+mi repo nexus:
+http://localhost:8081/repository/mirepo-hosted/
+http://localhost:8081/repository/mirepo-group/
+http://localhost:8081/repository/mirepo-proxy/
+==========================================================
+C:\gh\test-mod>pip install paquete_suma_resta2 -i http://localhost:8081/repository/mirepo-group/<<<simple/>>> -v --trusted-host localhost
+C:\gh\test-mod>pip install paquete_suma_resta2 -i http://localhost:8081/repository/mirepo-group/simple -v --trusted-host localhost
+
+Using pip 20.2.3 from c:\users\mp\appdata\local\programs\python\python38-32\lib\site-packages\pip (python 3.8)
+Non-user install because site-packages writeable
+Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-ephem-wheel-cache-julvs6s2
+Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-req-tracker-50pus4lc
+Initialized build tracking at C:\Users\mp\AppData\Local\Temp\pip-req-tracker-50pus4lc
+Created build tracker: C:\Users\mp\AppData\Local\Temp\pip-req-tracker-50pus4lc
+Entered build tracker: C:\Users\mp\AppData\Local\Temp\pip-req-tracker-50pus4lc
+Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-install-r34_p3op
+Looking in indexes: http://localhost:8081/repository/mirepo-group/simple
+1 location(s) to search for versions of paquete-suma-resta2:
+* http://localhost:8081/repository/mirepo-group/simple/paquete-suma-resta2/
+Fetching project page and analyzing links: http://localhost:8081/repository/mirepo-group/simple/paquete-suma-resta2/
+Getting page http://localhost:8081/repository/mirepo-group/simple/paquete-suma-resta2/
+Found index url http://localhost:8081/repository/mirepo-group/simple
+Getting credentials from keyring for http://localhost:8081/repository/mirepo-group/simple
+Getting credentials from keyring for localhost:8081
+Starting new HTTP connection (1): localhost:8081
+http://localhost:8081 "GET /repository/mirepo-group/simple/paquete-suma-resta2/ HTTP/1.1" 200 366
+  Found link http://localhost:8081/repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz#md5=33a228903ae9ef6d672aebbde91acf46 (from http://localhost:8081/repository/mirepo-group/simple/paquete-suma-resta2/), version: 1.0.0
+Given no hashes to check 1 links for project 'paquete-suma-resta2': discarding no candidates
+Using version 1.0.0 (newest of versions: 1.0.0)
+Collecting paquete_suma_resta2
+  Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-unpack-i0lz5btj
+  Getting credentials from keyring for localhost:8081
+  http://localhost:8081 "GET /repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz HTTP/1.1" 200 1069
+  Downloading http://localhost:8081/repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz (1.1 kB)
+  Added paquete_suma_resta2 from http://localhost:8081/repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz#md5=33a228903ae9ef6d672aebbde91acf46 to build tracker 'C:\\Users\\mp\\AppData\\Local\\Temp\\pip-req-tracker-50pus4lc'
+    Running setup.py (path:C:\Users\mp\AppData\Local\Temp\pip-install-r34_p3op\paquete-suma-resta2\setup.py) egg_info for package paquete-suma-resta2
+    Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c
+    Running command python setup.py egg_info
+    running egg_info
+    creating C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info
+    writing C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\dependency_links.txt
+    writing top-level names to C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\top_level.txt
+    writing manifest file 'C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\SOURCES.txt'
+    writing manifest file 'C:\Users\mp\AppData\Local\Temp\pip-pip-egg-info-k9jv3r7c\paquete_suma_resta2.egg-info\SOURCES.txt'
+  Source in c:\users\mp\appdata\local\temp\pip-install-r34_p3op\paquete-suma-resta2 has version 1.0.0, which satisfies requirement paquete_suma_resta2 from http://localhost:8081/repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz#md5=33a228903ae9ef6d672aebbde91acf46
+  Removed paquete_suma_resta2 from http://localhost:8081/repository/mirepo-group/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz#md5=33a228903ae9ef6d672aebbde91acf46 from build tracker 'C:\\Users\\mp\\AppData\\Local\\Temp\\pip-req-tracker-50pus4lc'
+Building wheels for collected packages: paquete-suma-resta2
+  Created temporary directory: C:\Users\mp\AppData\Local\Temp\pip-wheel-540o0f8j
+  Building wheel for paquete-suma-resta2 (setup.py) ...   Destination directory: C:\Users\mp\AppData\Local\Temp\pip-wheel-540o0f8j
+  Running command 'c:\users\mp\appdata\local\programs\python\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\mp\\AppData\\Local\\Temp\\pip-install-r34_p3op\\paquete-suma-resta2\\setup.py'"'"'; __file__='"'"'C:\\Users\\mp\\AppData\\Local\\Temp\\pip-install-r34_p3op\\paquete-suma-resta2\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\mp\AppData\Local\Temp\pip-wheel-540o0f8j'
+  running bdist_wheel
+  running build
+  installing to build\bdist.win32\wheel
+  running install
+  running install_egg_info
+  running egg_info
+  writing paquete_suma_resta2.egg-info\PKG-INFO
+  writing dependency_links to paquete_suma_resta2.egg-info\dependency_links.txt
+  writing top-level names to paquete_suma_resta2.egg-info\top_level.txt
+  reading manifest file 'paquete_suma_resta2.egg-info\SOURCES.txt'
+  writing manifest file 'paquete_suma_resta2.egg-info\SOURCES.txt'
+  Copying paquete_suma_resta2.egg-info to build\bdist.win32\wheel\.\paquete_suma_resta2-1.0.0-py3.8.egg-info
+  running install_scripts
+  creating build\bdist.win32\wheel\paquete_suma_resta2-1.0.0.dist-info\WHEEL
+  creating 'C:\Users\mp\AppData\Local\Temp\pip-wheel-540o0f8j\paquete_suma_resta2-1.0.0-py3-none-any.whl' and adding 'build\bdist.win32\wheel' to it
+  adding 'paquete_suma_resta2-1.0.0.dist-info/METADATA'
+  adding 'paquete_suma_resta2-1.0.0.dist-info/WHEEL'
+  adding 'paquete_suma_resta2-1.0.0.dist-info/top_level.txt'
+  adding 'paquete_suma_resta2-1.0.0.dist-info/RECORD'
+  removing build\bdist.win32\wheel
+done
+  Created wheel for paquete-suma-resta2: filename=paquete_suma_resta2-1.0.0-py3-none-any.whl size=1201 sha256=eb8e75efbc51af48b17590ec25111dd559015aadd51c0ed5a3a9b1464954be36
+  Stored in directory: c:\users\mp\appdata\local\pip\cache\wheels\db\27\6f\c970603283e2e3710ceec301897c29e24af5fa138608858ee2
+Successfully built paquete-suma-resta2
+Installing collected packages: paquete-suma-resta2
+
+Successfully installed paquete-suma-resta2-1.0.0
+Removed build tracker: 'C:\\Users\\mp\\AppData\\Local\\Temp\\pip-req-tracker-50pus4lc'
+
+==============================================================================================================================================================================
+C:\gh\test-mod>pip install paquete_suma_resta2 -i http://localhost:8081/repository/mirepo-hosted/<<<simple/>>> --trusted-host localhost
+
+C:\gh\test-mod>pip install paquete_suma_resta2 -i http://localhost:8081/repository/mirepo-hosted/simple/ --trusted-host localhost
+Looking in indexes: http://localhost:8081/repository/mirepo-hosted/simple/
+Collecting paquete_suma_resta2
+  Downloading http://localhost:8081/repository/mirepo-hosted/packages/paquete-suma-resta2/1.0.0/paquete_suma_resta2-1.0.0.tar.gz (1.1 kB)
+Building wheels for collected packages: paquete-suma-resta2
+  Building wheel for paquete-suma-resta2 (setup.py) ... done
+  Created wheel for paquete-suma-resta2: filename=paquete_suma_resta2-1.0.0-py3-none-any.whl size=1201 sha256=a5644b2feca3ac3b17c0427f670740771282a29af8d547b7e996e3cbe2f97a9b
+  Stored in directory: c:\users\mp\appdata\local\pip\cache\wheels\24\68\3e\502dd6042ea8fca594558ef337519d274fcb81b83d726adbf1
+Successfully built paquete-suma-resta2
+Installing collected packages: paquete-suma-resta2
+Successfully installed paquete-suma-resta2-1.0.0
